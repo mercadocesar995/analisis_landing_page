@@ -19,19 +19,19 @@ El dataset contiene las siguientes variables:
 
 - **date**: Fecha en la que el usuario fue expuesto a la página.
 
--**landing**: Versión de la página mostrada al usuario: A o B.
+- **landing**: Versión de la página mostrada al usuario: A o B.
 
--**region**: Región geográfica del usuario.
+- **region**: Región geográfica del usuario.
 
--**dispositivo**: Tipo de dispositivo utilizado.
+- **dispositivo**: Tipo de dispositivo utilizado.
 
--**traffic_source**: Canal por el que llegó el usuario.
+- **traffic_source**: Canal por el que llegó el usuario.
 
 -**user_type**: Tipo de usuario: Nuevo o Recurrente.
 
--**converted**: Indica si el usuario realizó una conversión: 0 = no, 1 = sí.
+- **converted**: Indica si el usuario realizó una conversión: 0 = no, 1 = sí.
 
--**gasto**: Monto gastado por el usuario; es 0 cuando no existe conversión.
+- **gasto**: Monto gastado por el usuario; es 0 cuando no existe conversión.
 
 
 ## Herramientas utilizadas
@@ -79,6 +79,7 @@ El proyecto se desarrolló en las siguientes etapas:
 No se encontraron valores nulos, categorías inesperadas ni valores negativos en gasto. Los valores 0 de gasto corresponden a usuarios que no realizaron una conversión.
 
 
+
 **2. Limpieza y transformación**
 
 Se realizaron ajustes en los tipos de datos para facilitar el análisis:
@@ -94,6 +95,7 @@ Se realizaron ajustes en los tipos de datos para facilitar el análisis:
 -Conservación de gasto como variable numérica decimal.
 
 
+
 **3. Comparación del gasto promedio — Landing A vs B**
 
 -Se comparó el gasto promedio de los usuarios que realizaron una conversión entre ambas versiones de la landing page.
@@ -101,9 +103,11 @@ Se realizaron ajustes en los tipos de datos para facilitar el análisis:
 -Se aplicó una prueba t de Welch para determinar si la diferencia observada era estadísticamente significativa.
 
 
+
 **4. Comparación de la tasa de conversión — Landing A vs B**
 
 Se comparó la tasa de conversión entre las dos versiones mediante una prueba z de proporciones.
+
 
 
 **5. Relación entre fuente de tráfico y conversión**
@@ -111,9 +115,11 @@ Se comparó la tasa de conversión entre las dos versiones mediante una prueba z
 Se analizó si existe una asociación entre traffic_source y converted mediante una prueba Chi-cuadrado.
 
 
+
 **6. Relación entre tipo de usuario y conversión**
 
 Se analizó la relación entre user_type y converted mediante una prueba Chi-cuadrado.
+
 
 
 **7. Visualización de resultados**
@@ -131,6 +137,7 @@ Se utilizaron gráficos para complementar los resultados estadísticos y analiza
 -Tasas de conversión.
 
 -Valor generado por fuente de tráfico.
+
 
 
 ## Principales hallazgos
