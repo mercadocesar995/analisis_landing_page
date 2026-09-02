@@ -27,7 +27,7 @@ El dataset contiene las siguientes variables:
 
 - **traffic_source**: Canal por el que llegó el usuario.
 
--**user_type**: Tipo de usuario: Nuevo o Recurrente.
+- **user_type**: Tipo de usuario: Nuevo o Recurrente.
 
 - **converted**: Indica si el usuario realizó una conversión: 0 = no, 1 = sí.
 
